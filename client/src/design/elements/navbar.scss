@@ -1,0 +1,48 @@
+.navbar {
+  width: 100%;
+  background: #3c6255;
+  color: #fff;
+  &__container {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 10% 50% 30% 10%;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  &__action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  &__search {
+    &-icon {
+      color: #000;
+      position: absolute;
+      left: 0.5rem;
+      top: 0.5rem;
+    }
+    form {
+      background: #fff;
+      border-radius: 1rem;
+      overflow: hidden;
+      position: relative;
+      input {
+        width: 100%;
+        border: none;
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}

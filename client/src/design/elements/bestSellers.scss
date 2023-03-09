@@ -1,0 +1,40 @@
+.bestSellers {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 1rem;
+  &__container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  &__books {
+    &-1 {
+      display: grid;
+      grid-template-columns: 15% 80%;
+      grid-column-gap: 4rem;
+      margin-bottom: 2rem;
+    }
+    &-2 {
+      display: grid;
+      grid-template-columns: 80% 15%;
+      grid-column-gap: 4rem;
+      margin-bottom: 2rem;
+    }
+    &-3 {
+      display: grid;
+      grid-template-columns: 15% 80%;
+      grid-column-gap: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__book {
+    height: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  &__content {
+    height: 25rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+}
