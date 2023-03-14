@@ -1,0 +1,43 @@
+.profileEdit {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba($color: #000000, $alpha: 0.5);
+  display: flex;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  align-items: center;
+  z-index: 1111111;
+  &__box {
+    width: 40%;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 0rem 0;
+    height: 80vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    h2 {
+      margin-bottom: 4rem;
+    }
+    form {
+      display: grid;
+      input {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+      }
+      button {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        background: #009eff;
+      }
+    }
+  }
+}

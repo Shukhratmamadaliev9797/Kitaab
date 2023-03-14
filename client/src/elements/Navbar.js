@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const userSignIn = useSelector((state) => state.userSignIn);
+  const { userInfo, loading, error } = userSignIn;
   return (
     <div className="navbar">
       <div className="navbar__container">
@@ -31,9 +34,15 @@ export default function Navbar() {
         </div>
         <ul className="navbar__action">
           <li>
-            <Link to="/login">
-              <i class="fas fa-sign-in-alt"></i>
-            </Link>
+            {userInfo ? (
+              <Link to="/profile">
+                <i class="far fa-user-circle"></i>
+              </Link>
+            ) : (
+              <Link to="/login">
+                <i class="fas fa-sign-in-alt"></i>
+              </Link>
+            )}
           </li>
           <li>
             <Link>

@@ -1,0 +1,19 @@
+.myListings {
+  width: 100%;
+  margin-top: 2rem;
+
+  &__container {
+    width: 80%;
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      background: #009eff;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      color: #fff;
+    }
+  }
+}
